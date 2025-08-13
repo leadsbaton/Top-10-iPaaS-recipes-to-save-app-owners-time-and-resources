@@ -36,7 +36,7 @@
     <!-- Main -->
     <main class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 mt-8 mb-16">
         <section class="bg-white rounded-2xl shadow-card p-6 sm:p-10">
-           <h1 class="text-2xl font-semibold mb-4">
+            <h1 class="text-2xl font-semibold mb-4">
                 Top 10 iPaaS recipes to save app owners time and resources
             </h1>
             <p class="mt-2 text-sm sm:text-base text-gray-600">
@@ -83,18 +83,20 @@
                     <p data-err="country" class="hidden mt-1 text-sm text-red-600"></p>
                 </div>
 
-                <!-- Newsletter (required as per your request) -->
-                <label class="flex items-start gap-3">
+                <!-- Newsletter (required) -->
+                <label class="flex items-center gap-3">
                     <input id="newsletter" name="newsletter" type="checkbox"
-                        class="mt-1 h-4 w-4 rounded border-gray-300 text-red-600 focus:ring-red-500" required />
+                        class="h-4 w-4 mt-0 flex-shrink-0 rounded border-gray-300 text-red-600 focus:ring-red-500"
+                        required />
                     <span class="text-sm text-gray-700">Tick this box to receive our newsletter</span>
                 </label>
                 <p data-err="newsletter" class="hidden -mt-3 text-sm text-red-600"></p>
 
                 <!-- Terms / Privacy (required) -->
-                <label class="flex items-start gap-3">
+                <label class="flex items-center gap-3">
                     <input id="terms" type="checkbox"
-                        class="mt-1 h-4 w-4 rounded border-gray-300 text-red-600 focus:ring-red-500" required />
+                        class="h-4 w-4 mt-0 flex-shrink-0 rounded border-gray-300 text-red-600 focus:ring-red-500"
+                        required />
                     <span class="text-sm text-gray-700">
                         By requesting this resource, you agree to our terms of use. All data is protected by our Privacy
                         Notice.
@@ -102,6 +104,7 @@
                         <a href="mailto:info@leadsbaton.com" class="text-red-600 underline">info@leadsbaton.com</a>
                     </span>
                 </label>
+
                 <p data-err="terms" class="hidden -mt-3 text-sm text-red-600"></p>
 
                 <button id="submitBtn" type="submit"

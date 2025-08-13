@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <title>Top 10 iPaaS recipes – Database Trends and Applications</title>
@@ -7,6 +8,7 @@
   <!-- Tailwind CDN -->
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
+
 <body class="bg-gray-100">
 
   <!-- Navbar Placeholder -->
@@ -19,15 +21,19 @@
       <!-- Dummy Image -->
       <div class="flex flex-col items-center md:w-1/3">
         <img src="assets/images/Informatica-logo.jpg" alt="Informatica-logo" class="mb-2 border rounded">
-        <button id="getEbookBtn" class="bg-red-600 hover:bg-red-700 text-white px-4 py-2 font-bold mt-2">GET EBOOK</button>
+        <button id="getEbookBtn" class="bg-red-600 hover:bg-red-700 text-white px-4 py-2 font-bold mt-2">GET
+          EBOOK</button>
       </div>
       <!-- Text -->
       <div class="md:w-2/3">
         <p class="mb-4 text-gray-800">
-          Whether you're an experienced application owner or just starting out, our eBook is your ticket to efficient, automated and hassle-free, intelligent application and data integration.
+          Whether you're an experienced application owner or just starting out, our eBook is your ticket to efficient,
+          automated and hassle-free, intelligent application and data integration.
         </p>
         <p class="mb-4 text-gray-800">
-          In this comprehensive guide, we give you the lowdown on the top iPaaS recipes to help you solve your toughest integration challenges. In short, look at these recipes to see how you can save valuable time and take the heavy integration lifting off your plate.
+          In this comprehensive guide, we give you the lowdown on the top iPaaS recipes to help you solve your toughest
+          integration challenges. In short, look at these recipes to see how you can save valuable time and take the
+          heavy integration lifting off your plate.
         </p>
         <div class="mb-4">
           <p class="font-bold mb-2">What will you get from downloading the eBook? Here’s a glimpse:</p>
@@ -37,7 +43,12 @@
             <li>A proper look at each recipe to see how you could improve efficiency</li>
           </ul>
         </div>
-        <button id="getEbookLink" class="text-red-600 font-bold underline cursor-pointer mt-4">GET EBOOK</button>
+        <!-- This is now centered at the bottom -->
+        <div class="flex justify-center mt-6">
+          <button id="getEbookLink" class="text-red-600 font-bold underline cursor-pointer">
+            GET EBOOK
+          </button>
+        </div>
       </div>
     </div>
   </div>
@@ -57,11 +68,12 @@
       .then(data => document.getElementById('footer').innerHTML = data);
 
     // Button actions
-    document.addEventListener('click', function(e) {
+    document.addEventListener('click', function (e) {
       if (e.target.id === 'getEbookBtn' || e.target.id === 'getEbookLink') {
         window.open('ebook.html', '_blank');
       }
     });
   </script>
 </body>
+
 </html>
